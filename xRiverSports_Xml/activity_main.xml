@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FB8A"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+<!-- ******************************** TITLE BOX STARTS ******************************** -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Page"
+        android:fontFamily="sans-serif"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#0009ff"
+        android:layout_centerHorizontal="true"
+    />
+<!-- ******************************** TITLE BOX END ******************************** -->
+
+
+<!-- ******************************** TEXT BOXES START ******************************** -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:textColorHint="#0009ff"
+        android:textColor="#0009ff"
+        android:backgroundTint="#0009ff"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/textView"
+    />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="#0009ff"
+        android:textColor="#0009ff"
+        android:backgroundTint="#0009ff"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/username"
+    />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#0009ff"
+        android:textColor="#0009ff"
+        android:backgroundTint="#0009ff"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/email"
+    />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Retype Password"
+        android:textColorHint="#0009ff"
+        android:textColor="#0009ff"
+        android:backgroundTint="#0009ff"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/password"
+    />
+<!-- ******************************** TEXT BOXES END ******************************** -->
+
+
+<!-- ******************************** BUTTONS START ******************************** -->
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/repassword"
+        android:backgroundTint="#0009ff"
+        android:textColor="#F0FB8A"
+    />
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Existing User! Go to Login"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnsignup"
+        android:backgroundTint="#0009ff"
+        android:textColor="#F0FB8A"
+    />
+<!-- ******************************** BUTTONS END ******************************** -->
+
+
+
+<!-- ********************************************************* COMMENTING THE CODE START *********************************************************
+
+                ***** I decided to put my large comments down here as I felt it made my coding look too cluttered. *****
+
+        TextView:                                   - This is a text box container
+            android:id="@+id/repassword"            - This Line is defining the ID of this container (in this case) 'textView' and links to the java page.
+            android:layout_width="match_parent"     - This line is making the width match the parent. The parent container is the background as the buttons are not in containers, otherwise it will match the container size
+            android:layout_height="wrap_content"    - This line is wrapping the content to make sure it stays inside the button container
+            android:text="Retype Password"          - This line is putting text inside the text box and disappears when the users starts to type within that text box
+            android:fontFamily="sans-serif"         - This is setting the font that is used for the text used in the container
+            android:layout_marginTop="50dp"         - This is setting the margin for above the text box and this is what creates the spacing as they are stacked on the page
+            android:textSize="20dp"                 - This is the size of the text displayed inside container
+            android:textStyle="bold"                - This is setting the weight the text displayed in the container, in this case its set to bold
+            android:textAlignment="center"          - This line is setting the alignment of the text in the container to centre
+            android:textColor="#0009ff"             - This is the colour the text displayed will be in (colours codes are at the bottom of the page)
+            android:layout_below="@id/password"     - This line is telling the button where it shall be situated on the page as I have selected the layout to be relative
+            android:layout_centerHorizontal="true"  - This is setting the container location relative to the page and is setting the container
+                                                      to be set in the middle of the page horizontally. meaning it isn't in the middle of the over all page.
+
+
+        Button:                                     - This is a button container
+            android:id="@+id/btnsignup"             - This line using the ID and telling it that ID is (in this case) 'btnsignup' this is linked to the java page
+            android:layout_width="match_parent"     - This line is making the width match the parent. The parent container is the background as the buttons are not in containers, otherwise it will match the container size
+            android:layout_height="wrap_content"    - This line is wrapping the content to make sure it stays inside the button box
+            android:text="register"                 - This the text that will appear within the box
+            android:layout_marginTop="50dp"         - This is setting the margin for above the box and this is what creates the spacing as they are stacked on the page.
+            android:layout_below="@+id/repassword"  - This line is telling the button where it shall be situated on the page as I have selected the layout to be relative
+            android:backgroundTint="#0009ff"        - This is the colour given the the background of the button
+            android:textColor="#F0FB8A"             - This is the colour the text displayed will be in (colours codes are at the bottom of the page)
+
+
+        EditText:                                   - This allows users to enter info into these containers
+            android:id="@+id/username"              - This Line is defining the ID of this box as EditText
+            android:layout_width="300dp"            - This line is setting the width of the container to 300dp
+            android:layout_height="wrap_content"    - This line is wrapping the height of the container to the text that is inside
+            android:layout_marginLeft="50dp"        - This is adding a margin at the left of the container and is used to give space between
+                                                      containers and the side of the page/parent
+            android:layout_marginTop="20dp"         - This is adding a margin at the top of the container and is used to give space between
+                                                      containers
+            android:hint="Username"                 - This line is what will appear as text inside the container visible to the user as a hint, and
+                                                      will disappear when the user begins to type in the box
+            android:textColorHint="#0009ff"         - This is the colour the text displayed will be in (colours codes are at the bottom of the page)
+            android:textColor="#0009ff"             - This is the colour the text input by the user will be in (colours codes are at the bottom of the page)
+            android:backgroundTint="#0009ff"        - This line is creating a background for the container
+
+
+        LinearLayout:                               - This is a container that holds other containers
+             android:layout_width="match_parent"    - This line is setting the width of the container to match the parent/page
+             android:layout_height="match_parent"   - This line is setting the height of the container to match the parent/page
+             android:layout_marginTop="150dp"       - This is adding a margin at the top of the container and is used to give space between
+             android:orientation="vertical">        - This is showing the orientation that the layout within the container will be
+
+
+
+********************************************************* COMMENTING THE CODE END ********************************************************* -->
+
+
+</RelativeLayout>
+
+    <!--
+
+        *****COLOURS*****
+        Yellow = #ffe035
+        Orange/red = #e05f41
+        Blue = #0009ff
+        Pale Orange = #e77240
+        Orange = #F6A136
+        Pale Yellow = #F0FB8A
+
+
+    Obtained from: https://htmlcolorcodes.com/
+
+
+    -->

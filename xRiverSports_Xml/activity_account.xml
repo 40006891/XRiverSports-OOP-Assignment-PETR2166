@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FB8A"
+    tools:context=".AccountActivity">
+
+    <!-- ******************************** TITLE BOX STARTS ******************************** -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Management"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="5dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#0009ff"
+        android:layout_centerHorizontal="true"
+    />
+<!-- ******************************** TITLE BOX END ******************************** -->
+
+
+<!-- ******************************** NAV BUTTONS START ********************************* -->
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnhome"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#0009ff"
+            android:textColor="#F0FB8A"
+            android:text="Home"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="275dp"
+        />
+
+        <Button
+            android:id="@+id/btnabout"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#0009ff"
+            android:textColor="#F0FB8A"
+            android:layout_marginLeft="10dp"
+            android:text="About"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="275dp"
+        />
+
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#0009ff"
+            android:textColor="#F0FB8A"
+            android:layout_marginLeft="10dp"
+            android:text="Logout"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="275dp"
+        />
+
+</LinearLayout>
+<!-- ******************************** NAV BUTTONS END ******************************** -->
+
+
+<!-- ******************************** TEXT BOXES START ******************************** -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="150dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/passwordtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif"
+        android:text="Here you can change your password"
+        android:textAlignment="center"
+        android:textColor="#0009ff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+    />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Username"
+        android:textColorHint="#0009ff"
+        android:textColor="#0009ff"
+        android:backgroundTint="#0009ff"
+    />
+
+    <EditText
+        android:id="@+id/newpassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:hint="New Password"
+        android:textColorHint="#0009ff"
+        android:textColor="#0009ff"
+        android:backgroundTint="#0009ff"
+    />
+
+    <EditText
+        android:id="@+id/renewpassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newpassword"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:hint="Retype New Password"
+        android:textColorHint="#0009ff"
+        android:textColor="#0009ff"
+        android:backgroundTint="#0009ff"
+    />
+<!-- ******************************** TEXT BOXES END ******************************** -->
+
+
+<!-- ******************************** BUTTONS START ******************************** -->
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0009ff"
+        android:text="Submit"
+        android:textColor="#F0FB8A"
+    />
+
+    <Button
+        android:id="@+id/btndeleteacc"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="170dp"
+        android:backgroundTint="#e05f41"
+        android:text="Delete Account"
+        android:textColor="#F0FB8A"
+    />
+
+</LinearLayout>
+<!-- ******************************** BUTTONS END ******************************** -->
+
+
+</RelativeLayout>
+
+<!-- ********************************************************* COMMENTING THE CODE START *********************************************************
+
+                ***** I decided to put my large comments down here as I felt it made my coding look too cluttered. *****
+
+        TextView:                                   - This is a text box container
+            android:id="@+id/textView"              - This Line is defining the ID of this container (in this case) 'textView' and links to the java page.
+            android:layout_width="300dp"            - This line is setting the width of the container to 300dp
+            android:layout_height="wrap_content"    - This line is wrapping the height of the container to the text that is inside
+            android:text="Example"                  - This line is what will appear as text inside the container visible to the user
+            android:fontFamily="sans-serif"         - This is setting the font that is used for the text used in the container
+            android:layout_marginTop="20dp"         - This is adding a margin at the top of the container and is used to give space between
+                                                      containers
+            android:textSize="20dp"                 - This is the size of the text displayed inside container
+            android:textStyle="bold"                - This is setting the weight the text displayed in the container, in this case its set to bold
+            android:textAlignment="center"          - This line is setting the alignment of the text in the container to centre
+            android:textColor="#0009ff"             - This is the colour the text displayed will be in (colours codes are at the bottom of the page)
+            android:layout_below="@id/btnhome"      - This is setting the location of where the container will sit, this is showing it will be
+                                                      set to below the btnhome
+            android:layout_centerHorizontal="true"  - This is setting the container location relative to the page and is setting the container
+                                                      to be set in the middle of the page horizontally. meaning it isn't in the middle of the over all page.
+
+
+        Button:                                     - This is a button container
+            android:id="@+id/btnhome"               - This Line is defining the ID of this box as textView
+            android:layout_width="wrap_content"     - This line is wrapping the width of the container to the text that is inside
+            android:layout_height="wrap_content"    - This line is wrapping the height of the container to the text that is inside
+            android:layout_centerHorizontal="true"  - This is setting the container location relative to the page and is setting the container
+                                                      to be set in the middle of the page horizontally. meaning it isn't in the middle of the over all page.
+            android:text="Home"                     - This line is what will appear as text inside the container visible to the user
+            android:layout_below="@id/textView"     - This is setting the location of where the container will sit, this is showing it will be
+                                                      set to below the btnhome
+            android:backgroundTint="#0009ff"        - This line is creating a background for the button
+            android:textColor="#F0FB8A"             - This is the colour the text displayed will be in (colours codes are at the bottom of the page)
+
+
+        EditText:                                   - This allows users to enter info into these containers
+            android:id="@+id/username"              - This Line is defining the ID of this box as EditText
+            android:layout_width="300dp"            - This line is setting the width of the container to 300dp
+            android:layout_height="wrap_content"    - This line is wrapping the height of the container to the text that is inside
+            android:layout_marginLeft="50dp"        - This is adding a margin at the left of the container and is used to give space between
+                                                      containers and the side of the page/parent
+            android:layout_marginTop="20dp"         - This is adding a margin at the top of the container and is used to give space between
+                                                      containers
+            android:hint="Username"                 - This line is what will appear as text inside the container visible to the user as a hint, and
+                                                      will disappear when the user begins to type in the box
+            android:textColorHint="#0009ff"         - This is the colour the text displayed will be in (colours codes are at the bottom of the page)
+            android:textColor="#0009ff"             - This is the colour the text input by the user will be in (colours codes are at the bottom of the page)
+            android:backgroundTint="#0009ff"        - This line is creating a background for the container
+
+
+        LinearLayout:                               - This is a container that holds other containers
+             android:layout_width="match_parent"    - This line is setting the width of the container to match the parent/page
+             android:layout_height="match_parent"   - This line is setting the height of the container to match the parent/page
+             android:layout_marginTop="150dp"       - This is adding a margin at the top of the container and is used to give space between
+             android:orientation="vertical">        - This is showing the orientation that the layout within the container will be
+
+
+
+********************************************************* COMMENTING THE CODE END ********************************************************* -->
+
+    <!--
+
+        *****COLOURS*****
+        Yellow = #ffe035
+        Orange/red = #e05f41
+        Blue = #0009ff
+        Pale Orange = #e77240
+        Orange = #F6A136
+        Pale Yellow = #F0FB8A
+
+
+    Obtained from: https://htmlcolorcodes.com/
+
+
+    -->

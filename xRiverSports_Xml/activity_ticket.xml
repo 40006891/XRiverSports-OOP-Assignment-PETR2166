@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FB8A"
+    tools:context=".TicketActivity">
+
+<!-- ******************************** TITLE BOX STARTS ******************************** -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tickets Page"
+        android:fontFamily="sans-serif"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#0009ff"
+        android:layout_centerHorizontal="true"
+    />
+<!-- ******************************** TITLE BOX END ******************************** -->
+
+
+<!-- ******************************** NAV BUTTONS START ********************************* -->
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="220dp"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0009ff"
+        android:textColor="#F0FB8A"
+        android:layout_marginLeft="55dp"
+        android:text="Home"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="275dp"
+    />
+
+</LinearLayout>
+<!-- ******************************** NAV BUTTONS END ******************************** -->
+
+
+<!-- ******************************** BUTTONS START ******************************** -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="110dp">
+
+    <Button
+        android:id="@+id/btnfootball"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#0009ff"
+        android:textColor="#F0FB8A"
+        android:text="Football - England Vs China \n Qualifier Match \n £40.00"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="275dp"
+    />
+
+    <Button
+        android:id="@+id/btntennis"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#0009ff"
+        android:textColor="#F0FB8A"
+        android:text="Tennis - Don Lewis Vs Ken Kiwi \n Final Game of the Season \n £48.00"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="275dp"
+    />
+
+    <Button
+        android:id="@+id/btnnetball"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#0009ff"
+        android:textColor="#F0FB8A"
+        android:text="Netball - Lionesses Vs Cougars \n Tryouts \n£5.00"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="275dp"
+    />
+
+    <Button
+        android:id="@+id/btndarts"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#0009ff"
+        android:textColor="#F0FB8A"
+        android:text="Darts - Old Folks Vs The Young-uns \n Darts Tournament Stage 3 \n £0.00"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="275dp"
+    />
+
+    <Button
+        android:id="@+id/btnhockey"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#0009ff"
+        android:textColor="#F0FB8A"
+        android:text="Hockey - Beavers Vs Cornish Pasties \n Finals \n £20.00"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="275dp"
+    />
+
+    <Button
+        android:id="@+id/btnrowing"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#0009ff"
+        android:textColor="#F0FB8A"
+        android:text="Rowing - The Tamar Run \n Rowing Tamar River \n £0.00"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="275dp"
+    />
+
+    <Button
+        android:id="@+id/btncycling"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#0009ff"
+        android:textColor="#F0FB8A"
+        android:text="Cycling - Round The Abbot \n Spring Tournament \n £10.00"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="275dp"
+    />
+
+    <Button
+        android:id="@+id/btnrugby"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#0009ff"
+        android:textColor="#F0FB8A"
+        android:text="Rugby - Six Nations \n £80.00"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="275dp"
+    />
+
+</LinearLayout>
+<!-- ******************************** BUTTONS END ******************************** -->
+
+
+</RelativeLayout>
+
+<!-- ********************************************************* COMMENTING THE CODE START *********************************************************
+
+                    ***** I decided to put my large comments down here as I felt it made my coding look too cluttered. *****
+
+           TextView:                                    - This is a text box container
+                android:id="@+id/textView"              - This Line is defining the ID of this container (in this case) 'textView' and links to the java page.
+                android:layout_width="300dp"            - This line is setting the width of the container to 300dp
+                android:layout_height="wrap_content"    - This line is wrapping the height of the container to the text that is inside
+                android:text="Example"                  - This line is what will appear as text inside the container visible to the user
+                android:fontFamily="sans-serif"         - This is setting the font that is used for the text used in the container
+                android:layout_marginTop="20dp"         - This is adding a margin at the top of the container and is used to give space between
+                                                          containers
+                android:textSize="20dp"                 - This is the size of the text displayed inside container
+                android:textStyle="bold"                - This is setting the weight the text displayed in the container, in this case its set to bold
+                android:textAlignment="center"          - This line is setting the alignment of the text in the container to centre
+                android:textColor="#0009ff"             - This is the colour the text displayed will be in (colours codes are at the bottom of the page)
+                android:layout_below="@id/btnhome"      - This is setting the location of where the container will sit, this is showing it will be
+                                                          set to below the btnhome
+                android:layout_centerHorizontal="true"  - This is setting the container location relative to the page and is setting the container
+                                                          to be set in the middle of the page horizontally. meaning it isn't in the middle of the over all page.
+
+
+            Button:                                     - This is a button container
+                android:id="@+id/btnhome"               - This Line is defining the ID of this box as textView
+                android:layout_width="wrap_content"     - This line is wrapping the width of the container to the text that is inside
+                android:layout_height="wrap_content"    - This line is wrapping the height of the container to the text that is inside
+                android:layout_centerHorizontal="true"  - This is setting the container location relative to the page and is setting the container
+                                                          to be set in the middle of the page horizontally. meaning it isn't in the middle of the over all page.
+                android:text="Home"                     - This line is what will appear as text inside the container visible to the user
+                android:layout_below="@id/textView"     - This is setting the location of where the container will sit, this is showing it will be
+                                                          set to below the btnhome
+                android:backgroundTint="#0009ff"        - This line is creating a background for the button
+                android:textColor="#F0FB8A"             - This is the colour the text displayed will be in (colours codes are at the bottom of the page)
+
+
+            LinearLayout:                               - This is a container that holds other containers
+                 android:layout_width="match_parent"    - This line is setting the width of the container to match the parent/page
+                 android:layout_height="match_parent"   - This line is setting the height of the container to match the parent/page
+                 android:layout_marginTop="150dp"       - This is adding a margin at the top of the container and is used to give space between
+                 android:orientation="vertical">        - This is showing the orientation that the layout within the container will be
+
+
+
+********************************************************* COMMENTING THE CODE END ********************************************************* -->
+
+
+    <!--
+
+        *****COLOURS*****
+        Yellow = #ffe035
+        Orange/red = #e05f41
+        Blue = #0009ff
+        Pale Orange = #e77240
+        Orange = #F6A136
+        Pale Yellow = #F0FB8A
+
+
+    Obtained from: https://htmlcolorcodes.com/
+
+
+     -->
